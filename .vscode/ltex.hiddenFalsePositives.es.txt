@@ -1,0 +1,1 @@
+{"rule":"AGREEMENT_DET_NOUN","sentence":"^\\QUbicación de las Paradas de Emergencia.\\E$"}

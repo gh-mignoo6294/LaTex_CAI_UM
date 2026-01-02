@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper]{book} % 'book' es ideal para manuales extensos
+%\usepackage[utf8]{inputenc}
+\input{0_Setup/Setup.tex} 
+\input{2_Graphics/GraphicsElements.tex}
+
+\begin{document}
+
+\include{portada}
+
+\AddToHook{shipout/background}{
+    \put (0,0) {
+        \begin{tikzpicture}[remember picture, overlay]
+            \node [opacity=0.1, rotate=0] at (current page.center) {
+                \includegraphics[width=10cm]{2_Graphics/CIRMAQ_Logo.jpg}
+            };
+        \end{tikzpicture}
+    }
+}
+
+\tableofcontents
+
+\chapter{Seguridad y Precauciones}
+\input{1_Content/Chapter 0 - Safety/C0_Safety.tex}
+
+\chapter{Descripción de la Máquina}
+%\input{1_Content/Chapter 1 - Machine Description/C1_MachineDescription.tex}
+
+\chapter{Rutinas de Operación}
+%\input{1_Content/Chapter 3 - Routines/P101_LoadingRamp_C1_AutoMode.tex} 
+
+\end{document}
+

@@ -1,0 +1,116 @@
+% LTeX: enabled=false
+%---------- LENGUAJE ----------%
+\usepackage[spanish]{babel}
+
+% Cambiar "Cuadro" por "Tabla"
+\addto\captionsspanish{%
+  \renewcommand{\tablename}{Tabla}%
+  \renewcommand{\listtablename}{Índice de tablas}%
+}
+\raggedbottom
+%---------- DEFINICIÓN DE FUENTES ----------%
+\usepackage{fontspec}
+\setmainfont{Sora}
+[
+    Path = ./0_Setup/fonts/,          % Ruta a la carpeta donde están los .ttf
+    Extension = .ttf,         % Especificamos que son archivos TTF
+    UprightFont = *-Regular,  % Sora-Regular.ttf
+    BoldFont = *-Bold,        % Sora-Bold.ttf
+    ItalicFont = *-ExtraLight, % Si no tenés itálica, podés usar un peso distinto
+    BoldItalicFont = *-ExtraBold
+]
+
+%---------- CONFIGURACIÓN DE PÁGINA ----------%
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=20mm, right=20mm,
+    top=16mm, bottom=16mm,
+    headheight=12mm,
+    headsep=6mm,
+    %footskip=20mm
+}
+\usepackage{float} % Permite el uso del modificador [H]
+%---------- ENCABEZADOS Y PIE DE PÁGINA ----------%
+\usepackage{fancyhdr}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% ENCABEZADO
+\fancyhead[LE,RO]{\footnotesize\bfseries\leftmark}
+% PIE DE PÁGINA
+\fancyfootoffset[L,R]{10mm}
+\fancyfoot[LE,RO]{\bfseries \thepage} 
+\fancyfoot[C]{\small \textit{CAI - Clasificador Automático de Ingresos}}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{
+    \fancyhf{}
+    % ENCABEZADO
+    \fancyhead[LE,RO]{\footnotesize\bfseries\leftmark}
+    % PIE DE PÁGINA
+    \fancyfootoffset[L,R]{10mm}
+    \fancyfoot[LE,RO]{\bfseries \thepage} 
+    \fancyfoot[C]{\small \textit{CAI - Clasificador Automático de Ingresos}}
+    \renewcommand{\headrulewidth}{0.4pt}
+}
+
+\iffalse DefaultFontSizes
+Comando,Tamaño (puntos),Uso común en tu manual
+\tiny,6pt,Notas legales muy pequeñas.
+\scriptsize,8pt,Subíndices o superíndices.
+\footnotesize,10pt,Notas al pie de página.
+\small,10.95pt,Encabezados y pies de página.
+\normalsize,12pt,Cuerpo del texto general.
+\large,14.4pt,Subsecciones.
+\Large,17.28pt,Títulos de secciones.
+\huge,20.74pt,"Etiqueta ""Capítulo X""."
+\Huge,24.88pt,Nombre del Capítulo.
+\fi
+
+%---------- TABLAS ----------%
+\usepackage{tabularx}    % Tablas con ancho fijo y columnas flexibles
+\usepackage{booktabs}    % Líneas de tabla de alta calidad (superior, media, inferior)
+\usepackage{colortbl}    % Para dar color a las celdas o filas si lo deseás
+
+%---------- IMÁGENES Y GRÁFICOS ----------%
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning, calc}
+
+%---------- FORMATOS DE TÍTULOS ----------%
+\usepackage{titlesec}
+%\titlespacing{command}{left}{before-sep}{after-sep}
+% 1. DEFINICIÓN DEL FORMATO (Obligatorio para que funcione el spacing)
+\titleformat{\chapter}[display]
+  {\normalfont\huge}           % 3. GLOBAL: Quitamos \bfseries de acá
+  {\itshape\chaptertitlename\ \thechapter} % 4. ETIQUETA: Agregamos \itshape (Itálica)
+  {10pt}                       % 5. SEPARACIÓN vertical
+  {\bfseries\huge}             % 6. TÍTULO: Aquí sí ponemos negrita y más grande
+
+% 2. AJUSTE DEL ESPACIADO
+\titlespacing*{\chapter}
+  {0pt}      % Margen izquierdo
+  {-20pt}      % Arriba (Sube el título. Ajustá este valor si queda muy pegado al borde)
+  {10pt}     % Abajo (Espacio antes de empezar el texto)
+
+% 3. AJUSTE PARA SECCIONES (Más simple)
+\titlespacing*{\section}
+  {0pt}    % Izquierda
+  {20pt}   % Arriba
+  {10pt}   % Abajo
+
+%----------- OTROS PAQUETES ----------%
+\usepackage{pst-hazard}
+
+
+
+%----------- DESHABILITADOS ----------%
+\iffalse
+\usepackage{changepage}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+  
+
+\titlespacing*{\section}{0pt}{0pt}{10pt}
+\fi

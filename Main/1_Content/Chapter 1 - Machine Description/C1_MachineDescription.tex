@@ -1,0 +1,108 @@
+\begin{figure}[ht]
+    \begin{adjustwidth}{0cm}{0cm} % Ganamos 2cm a la izquierda
+        %\left
+        \begin{tikzpicture}[
+            straight_belt/.style={
+                rectangle, draw=black, fill=straight_belt_color, 
+                minimum width=2cm, minimum height=4cm},
+            belt_label/.style={font=\small\sffamily\bfseries, align=center, black},
+            flow/.style={-{Stealth[scale=1.2]}, line width=1.5pt, color=white!80!black},
+            curve_belt/.style={draw=black!90, fill=curve_belt_color}
+        ]
+
+        \node[rectangle,
+        rounded corners,
+        draw=black,
+        fill=white,
+        anchor=south west,
+        minimum width=17cm,
+        minimum height=19cm]
+        (DrawFrame) at (0,0) {}; % Área de trabajo
+       
+        % C1
+        \node[straight_belt,
+        minimum width=3cm,
+        minimum height=4cm,
+        anchor=south west,
+        label={[belt_label]left:RAMPA\\DE\\CARGA\\(C1)}]
+        (C1) at (13,1) {};
+        % C2
+        \node[straight_belt,
+        minimum height=4cm,
+        anchor=south west,
+        label={[belt_label]left:CINTA\\DE\\ENTRADA\\(C2)}]
+        (C2) at (13.5,5.1) {};
+        % C3
+        \node[straight_belt,
+        minimum height=5cm,
+        anchor=south west,
+        label={[belt_label]left:CINTA\\DE\\PROCESAMIENTO\\(C3)}]
+        (C3) at (13.5,9.2) {};
+        % C5
+        \node[straight_belt,
+        rotate=90,
+        minimum height=5cm,
+        anchor=south west,
+        label={[belt_label]left:CINTA\\DE\\TRANSICION\\(C5)}]
+        (C5) at (11.5,16.2) {};  
+        % C4
+        \filldraw[curve_belt] 
+        (13.5,14.3)
+        arc (0:90:1.9)      % Arco exterior (ajustado de 0:90 a 3:87) 
+        -- (11.6,18.2)      % 2. Conexión a C5 con 0.1cm de aire
+        arc (90:0:3.9)      % 4. Arco interior (ajustado para mantener el centro)
+        -- (13.5,14.3)      % 5. Cierre con 0.1cm de aire sobre C3
+        -- cycle;
+        %C7
+        \node[straight_belt,
+        minimum height=11.2cm,
+        anchor=south west,
+        label={[belt_label]right:CINTA\\DE\\TRANSICION\\(C7)}]
+        (C7) at (2.5,3) {};
+        % C6
+        \filldraw[curve_belt] 
+        (2.5,14.3)
+        arc (180:90:3.9)      % Arco exterior (ajustado de 0:90 a 3:87) 
+        -- (6.4,16.2)      % 2. Conexión a C5 con 0.1cm de aire
+        arc (90:180:1.9)      % 4. Arco interior (ajustado para mantener el centro)      
+        -- cycle;
+        %C8
+        \node[straight_belt,
+        rotate = 90,
+        minimum height= 4cm,
+        anchor=south west,
+        label={[belt_label]right:CINTA\\DE\\TRANSICION\\(C8)}]
+        (C8) at (4.5,0.9) {};
+        \end{tikzpicture}
+        \caption{Esquema de la máquina: Ubicación de la cinta C1 en el área de trabajo.}
+    \end{adjustwidth}
+\end{figure}
+
+ 
+\iffalse
+ 
+
+    % 2. CINTA 3 (Horizontal)
+    % La posicionamos de forma que coincida con el radio de giro que queremos
+    % Si C1 está en (0,0), desplazamos C3 para dejar espacio al arco
+    \node[cinta, rotate=90, label={[etiqueta, yshift=0.5cm]above:Cinta de\\Salida (C3)}] (C3) at (4,4) {};
+
+                            % 5. Cierra automáticamente en el punto de inicio
+    
+    % Etiqueta para el arco
+    \node[etiqueta, blue!70!black] at (1.5, 3) {Curva de\\Transferencia (C2)};
+
+    % --- FLECHAS DE FLUJO ---
+    % En C1 (Sube)
+    \draw[flujo] ($(C1.south)+(0,0.5)$) -- ($(C1.north)+(0,-0.5)$);
+    
+    % En C2 (Giro) - El radio de la flecha es el promedio (2)
+    \draw[flujo] (0, 2) arc (180:90:2);
+    
+    % En C3 (Derecha)
+    \draw[flujo] ($(C3.west)+(0.5,0)$) -- ($(C3.east)+(-0.5,0)$);
+
+    \end{tikzpicture}
+    \end{adjustwidth}
+\end{figure}
+\fi

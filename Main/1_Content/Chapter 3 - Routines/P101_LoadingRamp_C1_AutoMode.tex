@@ -1,0 +1,50 @@
+\section{Resumen de la Rutina}
+La rutina \texttt{P101 LoadingRamp\_C1} gestiona el ciclo de carga del Samples Sorter[cite: 69]. Esta secuencia asegura que el motor C1 solo avance bajo condiciones seguras de operación manual y detección automática[cite: 70].
+
+\section{Descripción de Operación y Control}
+
+\begin{itemize}
+    \item \textbf{Verificación de Estado}: El sistema inicia en el paso 0 (\textit{Stopped})[cite: 78]. Solo transiciona al ciclo operativo si se detecta \texttt{AutomaticMode} activo[cite: 79].
+    \item \textbf{Preparación (Paso 20)}: Se establece el \texttt{Program.Step} en 20[cite: 80]. El sistema queda a la espera de los periféricos de entrada[cite: 81].
+    \item \textbf{Condiciones de Disparo}: La marcha requiere señal simultánea de los pedales y el sensor C1[cite: 82, 83].
+    \item \textbf{Ciclo de Trabajo}: En el paso 10, se activa la salida \texttt{AM\_Run} y el temporizador de 10 segundos[cite: 83].
+    \item \textbf{Finalización}: Al cumplirse el tiempo (\texttt{MoveTime.DN}), se retorna al paso 20[cite: 84].
+\end{itemize}
+
+\section{Diagrama de Flujo (ISO 5807)}
+
+\begin{center}
+\begin{tikzpicture}[node distance=2.5cm, auto]
+
+% Nodos del flujo operativo usando los estilos de tu main.tex [cite: 57, 58]
+\node (start) [startstop] {Inicio (Paso 0)};
+\node (checkAuto) [decision, below=of start, yshift=-0.5cm] {Modo Auto?};
+\node (setStep20) [process, below=of checkAuto, yshift=-0.5cm] {Set Paso 20 (Ready)};
+\node (checkInputs) [decision, below=of setStep20, yshift=-0.5cm] {Pedales + Sensor?};
+\node (runMotor) [process, below=of checkInputs, yshift=-0.5cm] {Paso 10: Marcha (10s)};
+\node (checkTimer) [decision, below=of runMotor, yshift=-0.5cm] {Timer OK?};
+
+% Conexiones basadas en la lógica PLC [cite: 7, 14, 20, 31, 38]
+\draw [arrow] (start) -- (checkAuto);
+\draw [arrow] (checkAuto) -- node[anchor=east] {Si} (setStep20);
+\draw [arrow] (checkAuto.east) -- ++(1,0) |- node[pos=0.25] {No} (start.east);
+
+\draw [arrow] (setStep20) -- (checkInputs);
+
+\draw [arrow] (checkInputs.south) -- node[anchor=east] {Si [cite: 23, 30]} (runMotor);
+
+\draw [arrow] (checkInputs.west) -- ++(-1,0) |- node[pos=0.25] {No} (setStep20.west);
+
+\draw [arrow] (runMotor) -- (checkTimer);
+
+\draw [arrow] (checkTimer) -- node[anchor=east] {Si [cite: 38]} (setStep20.east);
+\iffalse
+\draw [arrow] (checkTimer.east) -- ++(1,0) |- node[pos=0.25] {No} (runMotor.east);
+\fi
+
+
+\end{tikzpicture}
+\end{center}
+
+
+
