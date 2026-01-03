@@ -1,6 +1,64 @@
 \section{Riesgos}
+\label{sec:C0_S1_Risks}
+\begin{figure}[H]
+    %\centering
+    \begin{tikzpicture}
+        % 1. La imagen base
+        \node[anchor=south west, inner sep=0] (imagen) at (0,0) {
+            \includegraphics[width=16cm]{2_Graphics/CAI_Vista0.PNG}
+        };
 
-\section{Principio de funcionamiento}
+        % 2. Capa de coordenadas relativas (0.0 a 1.0)
+        \begin{scope}[x={(imagen.south east)}, y={(imagen.north west)}]
+            
+            % --- UBICACIÓN DE CARTELES ---
+            % Rodillos contrarotantes (W025)
+            \node at (0.33, 0.17) (ISOSgn_C1_C2){\isosign[1.5cm]{ISO_7010_W025}}; 
+            \node at (0.60, 0.17) (ISOSgn_C2_C3){\isosign{ISO_7010_W025}};
+            \node at (0.85, 0.17) (ISOSgn_C3_C4){\isosign{ISO_7010_W025}}; 
+            \node at (0.93, 0.25) (ISOSgn_C4_C5){\isosign{ISO_7010_W025}};
+            \node at (0.93, 0.45) (ISOSgn_C5_C6){\isosign{ISO_7010_W025}};
+            \node at (0.85, 0.525) (ISOSgn_C6_C7){\isosign{ISO_7010_W025}};
+            \node at (0.21, 0.525) (ISOSgn_C7_C8){\isosign[1.5cm]{ISO_7010_W025}};
+            \node at (0.12, 0.525) (ISOSgn_C8_IN){\isosign{ISO_7010_W025}};
+            \node at (0.17, 0.85) (ISOSgn_C8_OUT){\isosign{ISO_7010_W025}};
+            % Atrapamiento por partes móviles (W024)
+            \node at (0.76, 0.525) (ISOSgn_L1_K){\isosign{ISO_7010_W024}};
+            \node at (0.66, 0.525) (ISOSgn_L2_K){\isosign{ISO_7010_W024}};
+            \node at (0.565, 0.525) (ISOSgn_L3_K){\isosign{ISO_7010_W024}};
+            \node at (0.47, 0.525) (ISOSgn_L4_K){\isosign{ISO_7010_W024}};
+            \node at (0.38, 0.525) (ISOSgn_L5_K){\isosign{ISO_7010_W024}};
+            \node at (0.28, 0.525) (ISOSgn_L6_K){\isosign{ISO_7010_W024}};
+            \node at (0.76, 0.65) (ISOSgn_L1_R){\isosign{ISO_7010_W024}};
+            \node at (0.66, 0.65) (ISOSgn_L2_R){\isosign{ISO_7010_W024}};
+            \node at (0.565, 0.65) (ISOSgn_L3_R){\isosign{ISO_7010_W024}};
+            \node at (0.47, 0.65) (ISOSgn_L4_R){\isosign{ISO_7010_W024}};
+            \node at (0.38, 0.65) (ISOSgn_L5_R){\isosign{ISO_7010_W024}};
+            \node at (0.28, 0.4) (ISOSgn_L6_R){\isosign{ISO_7010_W024}};
+            \node at (0.17, 0.9) (ISOSgn_C8_Cylinder){\isosign{ISO_7010_W024}};
+            % Ejemplo: Riesgo eléctrico (W012)
+            \node at (0.74, 0.12) (ISOSgn_VJ9560){\isosign{ISO_7010_W012}};
+            \node at (0.93, 0.08) (ISOSgn_MainCabinet){\isosign[1.2cm]{ISO_7010_W012}};
+            \node at (0.45, 0.4) (ISOSgn_PC_Control){\isosign{ISO_7010_W012}};
+        \end{scope}
+    \end{tikzpicture}
+    \caption{Ubicación de riesgos asociados con el C.A.I.}
+    \label{fig:C0_S1_Risks}
+\end{figure}
+\begin{table}[H]
+    \renewcommand{\arraystretch}{1.2} % Un poco más de aire para el centrado vertical
+    % Definimos columnas: 
+    % 1ra: m{2.5cm} -> Centrado vertical (m) y horizontal (centering)
+    % 2da: >{\footnotesize}X -> Texto más chico y ancho automático
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}m{2.5cm}|>{\footnotesize\raggedright\arraybackslash}X|} \hline
+        \rowcolor{gray!15} \textbf{Señal} & \textbf{Descripción} \\ \hline
+        \isosign{ISO_7010_W025} & Advertencia de riesgo de atrapamiento por rodillos contrarotantes. \\ \hline
+        \isosign{ISO_7010_W024} & Advertencia de riesgo de atrapamiento por partes móviles. \\ \hline
+        \isosign{ISO_7010_W012} & Advertencia de riesgo eléctrico. \\ \hline
+    \end{tabularx}
+\end{table}
+
+\section{Paradas de Emergencia}
 \label{sec:principio_funcionamiento_paradas_emergencia}
 La función principal de una parada de emergencia es detener de manera inmediata y segura el funcionamiento de una máquina o sistema en caso de una situación peligrosa o de emergencia. Estas paradas están diseñadas para ser fácilmente accesibles y operables por cualquier persona que se encuentre cerca de la máquina, permitiendo una respuesta rápida para prevenir accidentes o daños.
 El CAI cuenta con múltiples paradas de emergencia distribuidas estratégicamente alrededor de la máquina, así como una cuerda de vida que recorre las estaciones de pateadores en el perímetro exterior del recinto. Al activar cualquiera de estas paradas, se detienen de manera inmediata todos los motores de las cintas y se libera por completo las presiones los sistemas neumáticos, deteniendo todas las operaciones en curso y asegurando la seguridad del personal y del equipo. 
@@ -16,19 +74,7 @@ El CAI cuenta con múltiples paradas de emergencia distribuidas estratégicament
     \end{center}
    
 \end{itemize}
-\section{¿Qué hacer luego de una parada de emergencia?}
-\label{sec:que_hacer_luego_parada_emergencia}
-Después de activar una parada de emergencia, es crucial seguir una serie de pasos para garantizar la seguridad y el correcto reinicio de la máquina:
-\begin{enumerate}
-    \item \textbf{Evaluar la situación}: Antes de proceder, asegúrese de que la situación que llevó a la activación de la parada de emergencia esté bajo control y que no haya riesgos inmediatos para el personal o el equipo.
-    \item \textbf{Notificar al personal}: Informe a los supervisores y al personal relevante sobre la activación de la parada de emergencia y las circunstancias que la provocaron.
-    \item \textbf{Inspeccionar la máquina}: Realice una inspección visual de la máquina para identificar cualquier daño o problema que pueda haber causado la necesidad de una parada de emergencia.
-    \item \textbf{Resolver el problema}: Aborde cualquier problema identificado durante la inspección antes de intentar reiniciar la máquina. Esto puede incluir reparaciones, ajustes o limpieza.
-    \item \textbf{Liberar la parada de emergencia}: Gire el botón de la parada de emergencia para liberarlo y permitir que vuelva a su posición original. En el caso de la cuerda de vida, presione el botón de reset en el módulo de control.
-    \item \textbf{Reiniciar la máquina}: El reinicio del sistema de seguridad se ejecuta con los pulsadores azules que se encunetran en el panel HMI y en la puerta del tablero eléctrico principal. 
-    \item \textbf{Retome las operaciones con normalidad}: Una vez reiniciado el sistema de seguridad, puede reanudar las operaciones normales de la máquina.
-\end{enumerate}
-\newpage
+
 \section{Ubicación de las Paradas de Emergencia}
 \label{sec:ubicacion_paradas_emergencia}
 Las paradas de emergencia están estratégicamente ubicadas alrededor de la máquina para garantizar un acceso rápido en caso de una situación peligrosa. Al activar una parada de emergencia, se cortará inmediatamente la alimentación eléctrica de la máquina, deteniendo todas las operaciones en curso.
@@ -61,9 +107,17 @@ Las paradas de emergencia están estratégicamente ubicadas alrededor de la máq
 \caption{Leyenda de la figura \ref{fig:ubicacion_paradas_emergencia}.}
 \label{tab:referencias_seguridad}
 \end{table}
+\newpage
 
-    \iffalse
-
-        
-        
-    \fi
+\section{¿Qué hacer luego de una parada de emergencia?}
+\label{sec:que_hacer_luego_parada_emergencia}
+Después de activar una parada de emergencia, es crucial seguir una serie de pasos para garantizar la seguridad y el correcto reinicio de la máquina:
+\begin{enumerate}
+    \item \textbf{Evaluar la situación}: Antes de proceder, asegúrese de que la situación que llevó a la activación de la parada de emergencia esté bajo control y que no haya riesgos inmediatos para el personal o el equipo.
+    \item \textbf{Notificar al personal}: Informe a los supervisores y al personal relevante sobre la activación de la parada de emergencia y las circunstancias que la provocaron.
+    \item \textbf{Inspeccionar la máquina}: Realice una inspección visual de la máquina para identificar cualquier daño o problema que pueda haber causado la necesidad de una parada de emergencia.
+    \item \textbf{Resolver el problema}: Aborde cualquier problema identificado durante la inspección antes de intentar reiniciar la máquina. Esto puede incluir reparaciones, ajustes o limpieza.
+    \item \textbf{Liberar la parada de emergencia}: Gire el botón de la parada de emergencia para liberarlo y permitir que vuelva a su posición original. En el caso de la cuerda de vida, presione el botón de reset en el módulo de control.
+    \item \textbf{Reiniciar la máquina}: El reinicio del sistema de seguridad se ejecuta con los pulsadores azules que se encunetran en el panel HMI y en la puerta del tablero eléctrico principal. 
+    \item \textbf{Retome las operaciones con normalidad}: Una vez reiniciado el sistema de seguridad, puede reanudar las operaciones normales de la máquina.
+\end{enumerate}

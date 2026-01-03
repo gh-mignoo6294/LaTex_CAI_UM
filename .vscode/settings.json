@@ -1,3 +1,4 @@
 {
-    "ltex.java.path": ""
+    "ltex.java.path": "",
+    "files.refactoring.autoSave": false
 }
