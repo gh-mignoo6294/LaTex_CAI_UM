@@ -71,7 +71,7 @@ Comando,Tamaño (puntos),Uso común en tu manual
 \usepackage{tabularx}    % Tablas con ancho fijo y columnas flexibles
 \usepackage{booktabs}    % Líneas de tabla de alta calidad (superior, media, inferior)
 \usepackage{colortbl}    % Para dar color a las celdas o filas si lo deseás
-
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
 %---------- IMÁGENES Y GRÁFICOS ----------%
 \usepackage{graphicx}
 \usepackage{xcolor}
@@ -92,16 +92,25 @@ Comando,Tamaño (puntos),Uso común en tu manual
 \titlespacing*{\chapter}
   {0pt}      % Margen izquierdo
   {-20pt}      % Arriba (Sube el título. Ajustá este valor si queda muy pegado al borde)
-  {10pt}     % Abajo (Espacio antes de empezar el texto)
+  {5pt}     % Abajo (Espacio antes de empezar el texto)
 
 % 3. AJUSTE PARA SECCIONES (Más simple)
 \titlespacing*{\section}
   {0pt}    % Izquierda
   {20pt}   % Arriba
-  {10pt}   % Abajo
+  {5pt}   % Abajo
+
+\setlength{\belowcaptionskip}{-5pt} % Reduce el espacio inferior de los captions
+%---------- REFERENCIAS ----------%
+\usepackage[spanish, capitalise]{cleveref}
+
+% Opcional: Si preferís que diga "Fig." en lugar de "Figura"
+% \crefname{figure}{F.}{Figuras}
+% \crefname{table}{T.}{Tablas}
+% \crefname{equation}{E.}{Ecuaciones}
 
 %----------- OTROS PAQUETES ----------%
-\usepackage{pst-hazard}
+\usepackage{svg}
 
 
 

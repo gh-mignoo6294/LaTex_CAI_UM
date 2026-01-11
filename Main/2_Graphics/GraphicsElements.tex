@@ -25,13 +25,11 @@
         draw=black,          % Borde negro
         fill=red,               % Relleno rojo
         very thick,          % Borde un poco más grueso para que resalte
-        inner sep=1pt,       % Espacio entre el número y el borde
         minimum size=6mm,    % Tamaño mínimo para que todos sean iguales
         font=\bfseries\small, % Fuente clara y en negrita
         text=white           % Color del número
     }
 }
-
 %Colors Setup
 \definecolor{straight_belt_color}{HTML}{22B14C} % Verde bosque para las cintas rectas#
 \definecolor{curve_belt_color}{HTML}{808080} % Gris para las cintas curvas
@@ -42,4 +40,8 @@
     \begin{tikzpicture}[baseline=(char.base)]
         \node[SafetyRef, minimum size=6mm, font=\small\bfseries] (char) {#1};
     \end{tikzpicture}%
+}
+% Definición corregida para centrado vertical automático
+\newcommand{\isosign}[2][0.7cm]{%
+    \raisebox{-.3\height}{\includegraphics[height=#1]{2_Graphics/#2}}%
 }

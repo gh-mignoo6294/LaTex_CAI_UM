@@ -195,3 +195,174 @@ INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer
 INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarycalc.code.tex
 INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\cleveref\cleveref.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\cleveref\cleveref.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\svg\svg.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\svg\svg.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlfile-hook.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlfile-hook.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\tools\shellesc.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\tools\shellesc.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\transparent\transparent.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\transparent\transparent.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\transparent\transparent-nometadata.sty
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\tex\latex\transparent\transparent-nometadata.sty
+INPUT .\2_Graphics\GraphicsElements.tex
+INPUT .\2_Graphics\GraphicsElements.tex
+INPUT 2_Graphics\GraphicsElements.tex
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.aux
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.aux
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.aux
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\portada.aux
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\portada.aux
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\portada.aux
+OUTPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.aux
+OUTPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\portada.aux
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.toc
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.toc
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.toc
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\emili\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+OUTPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.toc
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+OUTPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.xdv
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\1_Content\Chapter 0 - Safety\C0_Safety.tex
+INPUT .\1_Content\Chapter 0 - Safety\C0_Safety.tex
+INPUT 1_Content\Chapter 0 - Safety\C0_Safety.tex
+INPUT .\2_Graphics\CAI_Vista0.PNG
+INPUT .\2_Graphics\CAI_Vista0.PNG
+INPUT .\2_Graphics\CAI_Vista0.PNG
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W025.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W024.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\ISO_7010_W012.pdf
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\800FM-MT44_1000x1000.jpg
+INPUT .\2_Graphics\800FM-MT44_1000x1000.jpg
+INPUT .\2_Graphics\800FM-MT44_1000x1000.jpg
+INPUT .\2_Graphics\440E-LL5SE5--ISO.jpg
+INPUT .\2_Graphics\440E-LL5SE5--ISO.jpg
+INPUT .\2_Graphics\440E-LL5SE5--ISO.jpg
+INPUT .\2_Graphics\CAI_Vista0.PNG
+INPUT .\2_Graphics\CAI_Vista0.PNG
+INPUT .\2_Graphics\CAI_Vista0.PNG
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT .\2_Graphics\CIRMAQ_Logo.jpg
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\main.aux
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\portada.aux
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\portada.aux
+INPUT d:\Emilio\Documents\CAI - Clasificador Automático de Ingresos\Main\build\portada.aux
