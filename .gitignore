@@ -4,7 +4,7 @@
 *.toc
 *.pdf
 *.pdf
-!2_Graphics/*.pdf
+!Main/2_Graphics/*.pdf
 *.synctex.gz
 
 # Compiled source #
